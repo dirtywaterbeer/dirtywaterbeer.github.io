@@ -1,7 +1,7 @@
 <html>
 <head>
-	<link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-	<link href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css'  rel='stylesheet' >
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+	<link href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css'  rel='stylesheet' >
 
 	<style>
 		body {
@@ -12,7 +12,7 @@
 		}
 
 		#box {
-			
+
 			/*size it*/
 			width: 44vmin;
 			height: 24vmin;
@@ -22,11 +22,11 @@
 			top: 50%;
 			left: 50%;
 			margin-left: -22vmin; /*half the width*/
-			margin-top: -12vmin; /*half the height*/
+			margin-top: -16vmin; /*half the height plus some*/
 
 			/*style it*/
 			border: solid black 2px;
-			
+
 		}
 
 		#box div {
@@ -36,6 +36,22 @@
 			color: black;
 			margin-top: 3vmin;
 		}
+
+		#email {
+			position: fixed;
+			margin-top: 10vmin;
+			margin-left: -22vmin;
+			width: 44vmin;
+			top: 50%;
+			left: 50%;
+
+			text-decoration: none;
+			text-align: center;
+			color: black;
+			font-family: 'Montserrat';
+			font-size: 3vmin;
+		}
+
 	</style>
 </head>
 
@@ -43,5 +59,14 @@
 	<div id="box" class="animated fadeIn">
 		<div>dwb</div>
 	</div>
+
+	<script language="javascript">
+		var user = 'dirtywaterbeer';
+		var domain = 'outlook.com';
+
+		document.write('<a id=\"email\" href=\"mailto:' + user + '@' + domain + '\">');
+		document.write(user + '@' + domain + '</a>');
+	</script>
+
 </body>
 </html>
